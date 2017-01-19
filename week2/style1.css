@@ -1,0 +1,23 @@
+.header, .footer {
+    height: 75px;
+    min-height: 75px;
+    max-height: 75px;
+}
+
+#main [class*='col-md-3'] {
+    height: 300px;
+    min-height: 300px;
+    max-height: 300px;
+}
+
+#left {
+    width: 73%;
+    min-height: 400px;
+    margin: 1%;
+}
+
+#right {
+    width: 23%;
+    margin: 1%;
+    min-height: 400px;
+}
