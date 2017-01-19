@@ -1,0 +1,24 @@
+.header, .footer {
+    height: 50px;
+    min-height: 50px;
+    max-height: 75px;
+    margin-bottom: 10px;
+}
+
+.header2{
+  height: 200px;
+  margin-bottom: 10px;
+}
+
+#main [class*='col-md-3'] {
+    width: 20%;
+    min-height: 100px;
+    margin-right: 1%;
+    margin-bottom: 1%;
+
+
+  }
+
+.test{
+  margin-left: 7%;
+}
