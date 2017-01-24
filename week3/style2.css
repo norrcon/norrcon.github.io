@@ -10,9 +10,9 @@
 
 #main [class*='col-md-2'] {
     min-height: 400px;
-    margin: 8px;
+    margin: 1%;
 }
 
 #main [class*='col-md-7'] {
     min-height: 400px;
-    margin: 8px;
+    margin: 1%;
