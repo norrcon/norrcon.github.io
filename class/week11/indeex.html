@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Week 11</title>
+
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.css">
+    <title>hey there</title>
+  </head>
+  <body>
+
+
+    var catsUrl =
+        "http://api.giphy.com/v1/gifs/search?q=funny+cat&api_key=dc6zaTOxFJmzC";
+
+        $.get(catsUrl)
+         .done(function(data) {
+
+           //weaterhData is smaller more manageable object
+           var weatherData = data.query.results.channel;
+           console.log("success!");
+           console.dir(weatherData);
+
+    
+
+           //put myHtml on screen
+           $(document).ready(function(){
+             $("#myContainer").html(myHtml);
+           })
+         })
+         .fail(function(data){
+           console.log("fail!");
+           console.dir(data);
+         });
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+
+
+  </body>
+</html>
